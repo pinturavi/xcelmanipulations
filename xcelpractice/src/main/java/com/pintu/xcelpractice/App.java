@@ -34,9 +34,9 @@ public class App
     {
     	Date date1;
     	List<Map<String,String>> excelMapList = new ArrayList<Map<String, String>>();
-    	Map<Integer,Map<String,String>> globalMap = new HashMap<>();
+    	Map<Integer,Map<String,String>> globalMap = new HashMap<Integer, Map<String, String>>();
     	List<String> keyList = new ArrayList<String>();
-    	List<Expenses> expensesList = new ArrayList<>();
+    	List<Expenses> expensesList = new ArrayList<Expenses>();
     	System.out.println( "Hello World!" );
     	FileInputStream excelFile = new FileInputStream(new File(FILE_NAME));
     	Workbook workbook = new XSSFWorkbook(excelFile);

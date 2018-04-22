@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DateUtil;
@@ -99,6 +101,7 @@ public class App
         	item.forEach((k, v) -> System.out.print(v+"\t"));
         	System.out.println();
         });
+        
         keyList.forEach(key-> System.out.print(key+"\t"));
         System.out.println();
         expensesList.forEach(expenses->System.out.println(expenses.getDate()+"\t"+expenses.getSpentFor()+"\t"+expenses.getAmount()+"\n"));
